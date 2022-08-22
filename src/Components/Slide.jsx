@@ -1,14 +1,17 @@
 import React from "react";
-function Slide({ value }) {
+function Slide({value,handelChange}) {
+  
   const [loading, setLoading] = React.useState(false);
   const [data, setData] = React.useState([]);
   // const [error, setError] = React.useState(false);
-  
+
 
   
   React.useEffect(() => {
     fetchAndUpdateData();
+    // handelChange()
     // console.log(value)
+
   }, []);
 
   const fetchAndUpdateData = () => {
@@ -17,7 +20,7 @@ function Slide({ value }) {
       .then((res) => res.json())
       .then((res) => setData(res))
 
-      console.log(value)
+      // console.log(value)
   };
 
 

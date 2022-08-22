@@ -47,7 +47,7 @@ export default function App() {
   return (
     <div className="App">
       <h1 data-cy="header">Slides{count}</h1>
-      <Slide value={count} />
+      <Slide value={count}  />
       <button data-cy="prev" disabled={disabled}  onClick={() => handelChange(-1)} >Prev</button>
       <button data-cy="next" disabled={disabled1}  onClick={() => handelChange(1)} >Next</button>
     </div>
