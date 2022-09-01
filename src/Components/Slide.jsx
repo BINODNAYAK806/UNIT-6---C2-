@@ -12,7 +12,7 @@ function Slide({value,handelChange}) {
     // handelChange()
     // console.log(value)
 
-  }, []);
+  }, [value]);
 
   const fetchAndUpdateData = () => {
     setLoading(true);
